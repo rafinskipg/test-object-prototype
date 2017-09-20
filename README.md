@@ -14,7 +14,7 @@ npm test
 
 ## Exercise
 
-1 ) Create a Cell function constructor
+### Create a Cell function constructor
   - Cell has a inner state "active" which is a boolean
   - Cell has toggle method that changes it's state
   - Cell has a "print" method that prints it's shape
@@ -26,23 +26,22 @@ npm test
       xxxx  for inactive cell
       xxxx 
 
-2) Write unit tests to ensure the cell behaves correctly
+### Write unit tests to ensure the cell behaves correctly
 
-3) Create a new "Board" function constructor
+### Create a new "Board" function constructor
   - Board has a 2 dimension array of cells
   - It has a method "initialize" that resets the state of the board
   - In the initializate the state of the cells in the board is random.
   - It has a "print" method that prints a board and it's cells
 
-4 ) Unit test board functionality
+### Unit test board functionality
 
-5)  Create a game.js file that imports the Board and intializes it.
+### Create a game.js file that imports the Board and intializes it.
 
-6) Set a timeout to re-render the board each second, use console log to print the board.
+### Set a timeout to re-render the board each second, use console log to print the board.
   - Create a method "tick" in the board that increases a internal counter, re-initializes the board, and prints it
 
-pro) Implement the game of life rules:
-
+### PRO Implement the game of life rules:
     Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
     Any live cell with two or three live neighbours lives on to the next generation.
     Any live cell with more than three live neighbours dies, as if by overpopulation.
