@@ -41,7 +41,7 @@ npm test
 ### Set a timeout to re-render the board each second, use console log to print the board.
   - Create a method "tick" in the board that increases a internal counter, re-initializes the board, and prints it
 
-### PRO Implement the game of life rules:
+### EXTRA Implement the game of life rules:
     Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
     Any live cell with two or three live neighbours lives on to the next generation.
     Any live cell with more than three live neighbours dies, as if by overpopulation.
