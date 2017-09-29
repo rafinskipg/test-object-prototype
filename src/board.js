@@ -1,7 +1,8 @@
 import Cell from './cell'
 
-export default function Board(cellsMatrix) {
+export default function Board(cellsMatrix, printer) {
 	this.cellsMatrix = cellsMatrix
+	this.printer = printer ? printer : (value) => console.log(value)
 }
 
 function random() {
@@ -16,7 +17,10 @@ Board.prototype.initialize = function () {
 Board.prototype.print = function () {
 	this.cellsMatrix.map((array) => { 
 		array.map((item) => item.print())
-		console.log("\n")	
+		this.printer("\n")
 	})
 }
 
+Board.prototype.asd = function () {
+	
+}

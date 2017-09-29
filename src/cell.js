@@ -1,15 +1,16 @@
-export default function Cell(active) {
-	this.active = active
+export default function Cell(active, printer) {
+  this.active = active
+  this.printer = printer ? printer : (value) => process.stdout.write(value)
 }
 
 Cell.prototype.toggle = function toggle() {
-	this.active = !this.active
+  this.active = !this.active
 }
 
 Cell.prototype.print = function print() {
 	if(this.active) {
-		process.stdout.write(". ")
+		this.printer(". ")
 	} else {
-		process.stdout.write("x ")
+		this.printer("x ")
 	}
 }
