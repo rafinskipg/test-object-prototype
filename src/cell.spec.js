@@ -6,8 +6,6 @@ var printer = (value) => process.stdout.write(value)
 
 describe('Cell', () => {
   it('should be created', () => {
-
-  	console.log(sinon)
     var cell = new Cell(true, printer)
     expect(cell).to.be.a('object')
   })

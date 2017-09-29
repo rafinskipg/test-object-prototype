@@ -20,7 +20,3 @@ Board.prototype.print = function () {
 		this.printer("\n")
 	})
 }
-
-Board.prototype.asd = function () {
-	
-}
