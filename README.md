@@ -37,6 +37,10 @@ npm test
 ### Unit test board functionality
 
 ### Create a game.js file that imports the Board and intializes it.
+  You can test it by building it :
+  `npm run build`
+  and executing it on node by
+  `node dist/game.js`
 
 ### Set a timeout to re-render the board each second, use console log to print the board.
   - Create a method "tick" in the board that increases a internal counter, re-initializes the board, and prints it
